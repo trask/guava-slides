@@ -1,0 +1,33 @@
+.deck-container {
+  /* a little more emphasis due to darker background */
+  color: #404040;
+}
+.deck-container .slide pre {
+  float: right;
+  margin-left: 40px;
+  display: inline-block;
+  /* override prettyprint.css */
+  padding: 40px 50px 40px 40px;
+  min-width: 730px;
+  
+}
+.bullet-points {
+  overflow: hidden;
+}
+.hide {
+  display: none;
+}
+strong .pln {
+  /* for the emphasized code samples */
+  color: #333 !important;
+}
+h2 .subtitle {
+  font-size: 0.5em;
+  color: #666;
+  float: right;
+  padding-top: 30px;
+}
+.slide h2 {
+  /* a little more emphasis due to darker background */
+  border-bottom-color: #666;
+}
