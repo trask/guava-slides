@@ -1,4 +1,4 @@
-package com.github.trask.guavalunch.base;
+package com.github.trask.guavaslides.base;
 
 import org.apache.commons.lang3.ObjectUtils;
 

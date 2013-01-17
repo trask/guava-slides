@@ -1,9 +1,10 @@
-package com.github.trask.guavalunch;
+package com.github.trask.guavaslides;
 
 import java.util.List;
 import java.util.Random;
 
 import com.google.common.base.Objects;
+import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 
@@ -42,7 +43,7 @@ public class Names {
         return names;
     }
 
-    public static class Name {
+    public static class Name implements Comparable<Name> {
         private final String first;
         private final String last;
         public static Name from(String first, String last) {
@@ -73,7 +74,17 @@ public class Names {
         }
         @Override
         public String toString() {
-            return first + " " + last;
+            return Objects.toStringHelper(this)
+                    .add("first", first)
+                    .add("last", last)
+                    .toString();
+        }
+        @Override
+        public int compareTo(Name that) {
+            return ComparisonChain.start()
+                    .compare(last, that.last)
+                    .compare(first, that.first)
+                    .result();
         }
     }
 }

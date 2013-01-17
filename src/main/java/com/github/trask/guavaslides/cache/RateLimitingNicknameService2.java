@@ -1,9 +1,9 @@
-package com.github.trask.guavalunch.cache;
+package com.github.trask.guavaslides.cache;
 
 import java.util.concurrent.TimeUnit;
 
-import com.github.trask.guavalunch.NicknameService;
-import com.github.trask.guavalunch.Names.Name;
+import com.github.trask.guavaslides.NicknameService;
+import com.github.trask.guavaslides.Names.Name;
 import com.google.common.util.concurrent.RateLimiter;
 
 public class RateLimitingNicknameService2 {

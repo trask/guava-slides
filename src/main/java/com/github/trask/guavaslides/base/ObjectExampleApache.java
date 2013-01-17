@@ -1,12 +1,13 @@
-package com.github.trask.guavalunch.base;
+package com.github.trask.guavaslides.base;
 
 import java.util.Date;
 
+import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-public class ObjectExampleApache {
+public class ObjectExampleApache implements Comparable<ObjectExampleApache> {
 
     private Long id;
     private String longMatterName;
@@ -37,5 +38,10 @@ public class ObjectExampleApache {
         example.openDate = new Date();
         example.closeDate = null;
         System.out.println(example);
+    }
+
+    @Override
+    public int compareTo(ObjectExampleApache that) {
+        return CompareToBuilder.reflectionCompare(this, that);
     }
 }
