@@ -9,9 +9,9 @@
   transition: transform 500ms ease-in-out;
 }
 .csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide {
-  position: absolute;
+  /*position: absolute;
   top: 0;
-  left: 0;
+  left: 0;*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

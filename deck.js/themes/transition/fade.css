@@ -6,9 +6,6 @@
   transition: opacity 500ms ease-in-out 0ms;
 }
 .csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
